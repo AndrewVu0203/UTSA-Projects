@@ -1,0 +1,8 @@
+run by using these commands
+
+A
+./assign3A.sh < passwd.in
+
+
+B 
+bash assign3B.sh ps.in
