@@ -9,7 +9,6 @@ public class Fleet {
     // have all the getter, setter
     // method ReadDataFromFile() is most important
     String name;
-    String classStartship;
     ArrayList<Starship> starships = new ArrayList<Starship>();
     CrewMember crewMember = new CrewMember();
     String paragraph;
@@ -70,13 +69,15 @@ public class Fleet {
 
         // read everything from fleet.csv to scnr
         Scanner scnr = new Scanner(new File("/Users/nguyenduyvu/eclipse-workspace/JavaFXLab3/src/sample/fleet.csv"));
-        scnr.useDelimiter(Pattern.compile("[\n|,]"));
+        scnr.useDelimiter(Pattern.compile(" [\n|,] "));
+
         int i = 0;
         while(scnr.hasNext()) {
             starships.add(new Starship());
-            starships.get(i).setName(scnr.next());
-            starships.get(i).setRegistry(scnr.next());
-            starships.get(i).setStarshipClass(scnr.next());
+            starships.get(1).setName(scnr.next());
+            starships.get(1).setRegistry(scnr.next());
+            starships.get(1).setStarshipClass(scnr.next());
+//            System.out.println(scnr.next());
 
             i++;
         }

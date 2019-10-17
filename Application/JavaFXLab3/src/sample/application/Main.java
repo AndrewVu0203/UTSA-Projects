@@ -1,26 +1,24 @@
 package sample.application;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-
+import javafx.fxml.*;
+import javafx.scene.*;
+import javafx.stage.Stage;
 public class Main extends Application {
-    // Main will load .FXML file
+    public void start(Stage primaryStage) throws Exception {
 
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
-        primaryStage.setTitle("Lab 3");
-        primaryStage.setScene(new Scene(root, 800, 800));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
+        Parent root = loader.load();
+        Scene myScene = new Scene(root,800,800);
+        primaryStage.setScene(myScene);
         primaryStage.show();
-    }
 
+//        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+//        primaryStage.setTitle("Lab 3");
+//        primaryStage.setScene(new Scene(root, 800, 800));
+//        primaryStage.show();
+    }
     public static void main(String[] args) {
         launch(args);
-
-    }
-
-}
+    } }

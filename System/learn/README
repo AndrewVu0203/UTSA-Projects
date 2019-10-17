@@ -1,0 +1,12 @@
+#note
+grep use basic regex, and extened by -E 
+? not work for basic, only \?
+$# number of argument
+* all
+^0 not 0
+{c,h}
+
+#questions
+1. 
+The character class [^-,;.] will match either a caret, comma, hyphen, semicolon, or period.
+-z
