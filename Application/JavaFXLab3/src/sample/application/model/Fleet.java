@@ -69,7 +69,7 @@ public class Fleet {
 
         // read everything from fleet.csv to scnr
         Scanner scnr = new Scanner(new File("/Users/nguyenduyvu/eclipse-workspace/JavaFXLab3/src/sample/fleet.csv"));
-        scnr.useDelimiter(Pattern.compile(" [\n|,] "));
+        scnr.useDelimiter(Pattern.compile("[\n|,]"));
 
         int i = 0;
         while(scnr.hasNext()) {
