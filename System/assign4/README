@@ -1,0 +1,6 @@
+# to run
+bash assign4.sh ./data assign4.template 12/16/2021 ./output
+
+# <<<
+# department code 2 or 3 -> rm crs, 
+

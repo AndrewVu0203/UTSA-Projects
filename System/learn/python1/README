@@ -1,0 +1,41 @@
+w 
+consistent within blocks -> 
+immutable, can not be changed once in memory -> 
+unassigned -> 
+p.4 three quotes multiline-> 
+slicing -> 
++= ->
+
+
+chat : write bqf692
+tshell : shell, old
+bash : shell, more features
+:retab : convert existing tabs to your rules
+os : interact with operating system 
+sys : provides info about Python intepreter
+glob : match pattern
+len(sys.argv) : number of arguments
+sys.exit(1) : 
+os.path.isdir : built-in function
+.glob() : match pattern
+getopt()==-1 : loop has reach -1, terminate it
+argparse : parse sys.argv -> requiredInfo
+python3 example.py arguments
+interactive shell : parse Python code as it entered. coding python at terminal
+interactive shell prompt >>> : much like $ for shell 
+https://www.python.org/dev/peps/pep-0008/
+.rc : holds data 
+~/.vimrc : configure Vim 
+variable : Object References
+dynamically typed : var type defined when assigned, and can be change
+assignment (binding) : = 
+str() : convert specific value into a string
+type : can be considered class
+"" and '' : no difference, only for used inside each other
+associative arrays : dictionaries or hashes <key, value>
+sets : can not have multiple occurences
+tuples : immutable 
+Lists : mutable
+zero-indexed : start at 0
+sliced : get sub-Lists
+::3 : from the start, increment of 3

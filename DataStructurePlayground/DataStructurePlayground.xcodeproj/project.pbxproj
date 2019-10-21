@@ -10,6 +10,7 @@
 		419949F22356226A0035BEA6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 419949F12356226A0035BEA6 /* main.c */; };
 		419949FA235622F20035BEA6 /* README.c in Sources */ = {isa = PBXBuildFile; fileRef = 419949F9235622F20035BEA6 /* README.c */; };
 		419949FD235624100035BEA6 /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = 419949FC235624100035BEA6 /* array.c */; };
+		41D5F225235DEFC700C5FA84 /* pointerfunction.c in Sources */ = {isa = PBXBuildFile; fileRef = 41D5F224235DEFC700C5FA84 /* pointerfunction.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 		419949F9235622F20035BEA6 /* README.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = README.c; sourceTree = "<group>"; };
 		419949FB235624100035BEA6 /* array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
 		419949FC235624100035BEA6 /* array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
+		41D5F223235DEFC700C5FA84 /* pointerfunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pointerfunction.h; sourceTree = "<group>"; };
+		41D5F224235DEFC700C5FA84 /* pointerfunction.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pointerfunction.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				419949F9235622F20035BEA6 /* README.c */,
 				419949FB235624100035BEA6 /* array.h */,
 				419949FC235624100035BEA6 /* array.c */,
+				41D5F223235DEFC700C5FA84 /* pointerfunction.h */,
+				41D5F224235DEFC700C5FA84 /* pointerfunction.c */,
 			);
 			path = DataStructurePlayground;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				419949FD235624100035BEA6 /* array.c in Sources */,
+				41D5F225235DEFC700C5FA84 /* pointerfunction.c in Sources */,
 				419949F22356226A0035BEA6 /* main.c in Sources */,
 				419949FA235622F20035BEA6 /* README.c in Sources */,
 			);
