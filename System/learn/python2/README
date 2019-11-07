@@ -1,0 +1,13 @@
+why not sort sys.argv[1:] directly -> 
+list comprehesion -> 
+join() -> join elements together 
+split() -> seperate elements out 
+strip() -> remove what's inside
+
+range() : return a lit 
+list comprehesion : [x for x in range(10, 20) if x % 2 == 0]
+filter() : (func check, list before check)
+map() : (func transform, list before transform)
+list() : create a list based on range 
+lambda : nameless func 
+dictionary keys() values()

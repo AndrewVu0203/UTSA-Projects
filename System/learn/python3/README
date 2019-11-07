@@ -1,0 +1,15 @@
+splitting : separating text into segments
+(r"\w") : r is for raw string
+special classes : \w, \W, .... \S
+assertions : ^, $
+quantifers : ?, *, {n}
+sub() : substitution
+group() : return string that's match
+?P<some_name> : name the group 
+findall, finditer : return string and iterator 
+backreferencing \1: group can be referenced later 
+greedy and nongreedy: greedy finding all matching pattern, use ? to change to nongreedy
+flags re.MULTILINE : modify how the search is performmed
+compile() : return regex pattern for reuse
+iterator : object that you can traverse through the value 
+

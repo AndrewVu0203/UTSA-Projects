@@ -1,4 +1,3 @@
-w 
 consistent within blocks -> 
 immutable, can not be changed once in memory -> 
 unassigned -> 
@@ -6,6 +5,7 @@ p.4 three quotes multiline->
 slicing -> 
 += ->
 
+who
 
 chat : write bqf692
 tshell : shell, old
@@ -39,3 +39,12 @@ Lists : mutable
 zero-indexed : start at 0
 sliced : get sub-Lists
 ::3 : from the start, increment of 3
+/ : divide return floating point
+arg1 / arg2 : truncating division
+concate - append : concate creates new String object
+is : check point to same
+short-circui 
+membership in : check value exists in collection
+suites : block of code 
+pass : does nothing
+with open("somefile", "w") as f:

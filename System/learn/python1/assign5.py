@@ -12,5 +12,4 @@ print(my_list[::3]) #increment of 2
 
 hello="abcdef"
 print(hello[0])
-#hello[0]="b"
-
+#hello[0]="b" 
