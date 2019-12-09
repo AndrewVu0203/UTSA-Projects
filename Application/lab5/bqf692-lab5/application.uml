@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>application</OriginalElement>
+  <nodes>
+    <node x="629.1510770975057" y="0.0">application.Main</node>
+    <node x="370.15107709750566" y="0.0">application.model.Zone</node>
+    <node x="91.34452947845801" y="318.0">application.model.Park</node>
+    <node x="995.1510770975055" y="0.0">application.data</node>
+    <node x="836.1510770975057" y="0.0">application.view</node>
+    <node x="0.0" y="11.0">application.model.Dinosaur</node>
+    <node x="238.85147392290247" y="668.0">application.controller.ZoneController</node>
+    <node x="93.80257936507934" y="1098.0">application.controller.MainController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="application.controller.MainController" target="application.model.Park">
+      <point x="-96.0" y="-102.0" />
+      <point x="141.80257936507934" y="1073.0" />
+      <point x="195.094529478458" y="1073.0" />
+      <point x="195.094529478458" y="648.0" />
+      <point x="145.969529478458" y="648.0" />
+      <point x="-163.875" y="135.0" />
+    </edge>
+    <edge source="application.controller.ZoneController" target="application.model.Dinosaur">
+      <point x="-123.11111111111109" y="-190.0" />
+      <point x="254.24036281179139" y="638.0" />
+      <point x="58.844529478458014" y="638.0" />
+      <point x="58.844529478458014" y="298.0" />
+      <point x="19.083333333333314" y="298.0" />
+      <point x="-95.41666666666669" y="113.0" />
+    </edge>
+    <edge source="application.model.Park" target="application.model.Dinosaur">
+      <point x="-62.42857142857139" y="-135.0" />
+      <point x="247.41595804988663" y="298.0" />
+      <point x="209.91666666666669" y="298.0" />
+      <point x="95.41666666666669" y="113.0" />
+    </edge>
+    <edge source="application.controller.ZoneController" target="application.model.Park">
+      <point x="2.8421709430404007E-14" y="-190.0" />
+      <point x="377.3514739229025" y="608.0" />
+      <point x="473.719529478458" y="608.0" />
+      <point x="163.875" y="135.0" />
+    </edge>
+    <edge source="application.controller.ZoneController" target="application.model.Zone">
+      <point x="30.7777777777778" y="-190.0" />
+      <point x="408.12925170068024" y="618.0" />
+      <point x="538.8445294784581" y="618.0" />
+      <point x="538.8445294784581" y="288.0" />
+      <point x="490.52607709750566" y="288.0" />
+      <point x="13.375" y="124.0" />
+    </edge>
+    <edge source="application.controller.MainController" target="application.controller.ZoneController">
+      <point x="96.0" y="-102.0" />
+      <point x="333.80257936507934" y="1073.0" />
+      <point x="377.35147392290247" y="1073.0" />
+      <point x="0.0" y="190.0" />
+    </edge>
+    <edge source="application.model.Park" target="application.model.Zone">
+      <point x="62.428571428571445" y="-135.0" />
+      <point x="372.27310090702946" y="298.0" />
+      <point x="410.27607709750566" y="298.0" />
+      <point x="-66.875" y="124.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4543754662593205" x="908.8415662084885" y="621.355145133253" />
+  <SelectedNodes>
+    <node>application.model.Dinosaur</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

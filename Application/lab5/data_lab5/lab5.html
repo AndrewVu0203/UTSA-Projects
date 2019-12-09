@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>CS 3443 - Lab 5</title>
+</head>
+<body>
+
+<h2>UTSA CS 3443: Application Programming</h2>
+
+<hr width="100%">
+<h2>Lab 5</h2>
+<hr>
+<h2>Objectives:</h2>
+<ul>
+	<li>JavaFX</li>
+	<li>Exception handling</li>
+	<li>Collections: HashMap</li>
+</ul>
+
+<h3>Task: A GUI For Jurassic Park</h3>
+Mr. Hammond's park is about to open! <i>(Seriously though, what are they thinking?...)</i> <br/>
+His technical staff is a little tied-up right now, so he'd like to hire you for version 3.0 of their software - congrats!
+
+Your application will read in data from text files placed in a <b>data</b> directory.
+Sample files can be downloaded as a zip file <a href="data.zip">here</a> - unzip it and place the folder with files in your project in Eclipse.
+
+In this version, they will reuse the data files and information previously provided, but would like a user interface for easier access.
+
+<hr>
+<h2>Getting Started</h2>
+To begin this lab, create a new JavaFX project named <b>abc123-lab5</b>, and create the following packages, classes, and FXML files:
+
+<ul>
+	<li>application.Main</li>
+	<li>application.controller.MainController</li>
+	<li>application.controller.ZoneController</li>
+	<li>application.model.Dinosaur</li>
+	<li>application.model.Park</li>
+	<li>application.model.Zone</li>
+	<li>application.view.Main.fxml</li>
+	<li>application.view.Zone.fxml</li>
+</ul>
+
+
+
+<hr>
+<h2>App Design</h2>
+Your program will show a view similar to the one shown below when the app is run: <br/>
+<img src="main.png" style="width:50%;height:50%"/>
+ <br/>
+This view will be the <b>Main.fxml</b>. <br/><br/>
+
+When the user clicks on one of the seven buttons, the app will display a GUI similar to the following: <br/>
+<img src="zone.png" style="width:50%;height:50%"/>
+<br/>
+This view will be the <b>Zone.fxml</b>. <br/>
+The "Home" button should return the user to Main.fxml.
+
+
+<br/><br/>
+If the user enters information to relocate a dinosaur (in this example, "Tyrion and X") and clicks the "relocate" button,
+the app will update this view as follows: <br/>
+<img src="relocate.png" style="width:50%;height:50%"/>
+<br/>
+
+<p>
+<br/><br/>
+<b>It's officially  time to get creative!</b><br/>
+You may choose the images, fonts, colors, app size, and any other style features. 
+Use this opportunity to learn about background colors, good user design, or any aspects that might be useful to your team project.
+
+<br/><br/>
+The above views are <i>minimal</i> examples of the requirements for the lab - your submission must reflect all GUI components shown.
+This includes labels, textfields, buttons, two radio buttons (grouped), and a list view.
+
+<br/><br/>
+<b>Use the data files provided in Lab 2.</b>
+
+<br/><br/>
+<i>GUI Hints:</i> <br/>
+Read about the JavaFX <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/RadioButton.html">RadioButton</a> class. <br/>
+Review lecture slides and read about the JavaFX <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/ListView.html">ListView</a> class. <br/>
+</p>
+
+
+
+
+<hr>
+<h2>Making it Work</h2>
+
+<b>Main.java</b> will launch the application and show <b>Main.fxml</b>.<br />
+<p>
+<b>MainController.java</b> will be the <i>EventHandler</i> for this fxml, and should be connected to all buttons in this view.
+<br/>
+
+There will be only 7 zones in Jurassic Park, as given in the data files previously.
+These will not change - no zones added, removed, or modified.
+<br/> <i>The dinosaurs in each zone will change however.</i>
+
+</p>
+
+<p>
+The <b>ZoneController</b> class will be the event handler for Zone.fxml. <br/>
+
+When this view is loaded, the zone name, code, threat level, and number of dinosaurs will be displayed.
+In addition, a list of all dinosaurs will be shown to the user. <br/>
+<i>Hint: use the toString from your Dinosaur class to populate the data needed for this list.</i>
+
+
+<br/><br/>
+The user may <b>add a new dinosaur to this zone</b> by typing in a name, dinosaur type, 
+and selecting one of the two radio buttons corresponding to whether or not the dinosaur is carnivorous.
+When the user clicks the "add" button, the following should happen:
+<ul>
+	<li>The name and type fields should be cleared</li>
+	<li>A message should display under the add area indicating whether or not the add was successful.</li>
+	<li>The number of dinosaurs should be updated</li>
+	<li>The list of dinosaurs should display the new dinosaur's information</li>
+</ul>
+
+<br/>
+The user may <b>relocate a dinosaur from this zone</b> by typing in a name and entering a zone code (e.g. "TY")
+When the user clicks the "relocate" button, the following should happen:
+<ul>
+	<li>The name and zone code fields should be cleared</li>
+	<li>A message should display under the relocate area indicating whether or not the relocate was successful.</li>
+	<li>The number of dinosaurs should be updated</li>
+	<li>The list of dinosaurs should be updated (remove the dinosaur's information)</li>
+</ul>
+Note that if a dinosaur is relocated, we should be able to open the zone to which they were moved and view that dinosaur's information.<br/>
+(In the example given, open zone X and Tyrion the Tyrannosaurus should display in the list of dinosaurs.)
+</p>
+
+<b>Saving</b><br/>
+The user of our app will expect that changes made will persist after they close and reopen the app.
+In our given example, if the user closes the app after relocating Tyrion to zone X, then when they reopen the app he will still be in zone X.
+<br/>
+This means that upon adding and relocating dinosaurs, you will need to call upon the <b>save</b> method previously implemented.
+
+
+<br/><br/><br/>
+As always, the app should maintain one stage only.
+The app must use FXML for the views, and follow MVC design pattern. <br/>
+
+Model classes must be responsible for the data of this application, and controller classes will call upon methods in the model classes in order to 
+complete the tasks identified above.
+<hr>
+
+
+
+
+<h2>The Model</h2>
+While you can (and should!) reuse your code from the previous labs, note that the changes Hammond is requesting will require significant changes to the classes.
+<br/>
+The model of this application will be <b>Dinosaur.java</b>, <b>Park.java</b>, and <b>Zone.java</b>.
+In addition to the following requirements, you may need other methods to get your application working.
+
+
+<h3>Park</h3>
+<p>
+The Park class will be as previously defined, however it will contain a <b>HashMap</b>, instead of the previous collections.<br/>
+The key to the HashMap will be Zone objects.
+The value for each key will be an ArrayList of Dinosaur objects.
+<br/><br/>
+Include:
+<ul>
+	<li>Class variables for: HashMap, name of the park</li>
+	<li>Constructor</li>
+	<li>relocate(..) method</li>
+	<li>save() method</li>
+	<li>toString() method</li>
+	<li>loadZones(..) and loadDinosaurs(..) methods <i>(note that these will need to be updated!)</i></li>
+</ul>
+
+</p>
+
+
+
+<h3>Zone</h3>
+<p>
+The Zone class will no longer need to keep track of a collection of dinosaurs - remove the class variable and corresponding methods.
+<br/><br/>
+Include:
+<ul>
+	<li>Class variables for: name of zone, zone code, threat level </li>
+	<li>Constructor</li>
+	<li>toString() method</li>
+</ul>
+
+</p>
+
+
+
+<h3>Dinosaur</h3>
+<p>
+The Dinosaur class will be as previously defined, but will not need to keep track of their zone code (no class variable).
+
+<br/><br/>
+Include:
+<ul>
+	<li>Class variables for: name of dinosaur, type of dinosaur, carnivorous indicator (true/false) </li>
+	<li>Constructor</li>
+	<li>toString() method</li>
+</ul>
+</p>
+
+
+
+<p>
+<b>Model Reminders</b>
+<br/>
+All model classes must have getters and setters for all of their class variables. <br/>
+Constructors in these classes must initialize these variables.
+For example, if a class has a String name variable, then the constructor must take a String parameter to initialize the name.<br/>
+All collections must be initialized as well, however they will <u>not</u> be passed as parameters. 
+Instead, the constructor will initialize them as a new empty collection.
+
+</p>
+<hr/>
+
+
+
+
+<h2>User Input &amp; Exception Handling</h2>
+<p>
+	In Lab 7, you will be asked to update this application to handle exceptions properly and manage user input. <br/>
+	Your responsibilities in Lab 6 are to ensure feedback is displayed to the user as described in the sections above, and to ensure the app does not crash.
+	<br/>
+	<i>Note that in all GUI applications, the user must not be expected to view the console in order to receive feedback!</i>
+</p>
+<br/>
+
+
+
+
+<hr>
+<h3>Rubric:</h3>
+<ul>
+	<li>(25pts) Correctness - app functions as described. Your submission will be tested by running the app and assessing the output.</li>
+	<li>(10pts) MVC - app is implemented as described, and therefore adheres to the MVC design pattern.</li>
+	<li>(10pts) Main</li>
+	<li>(15pts) HashMap</li>
+	<li>(20pts) ZoneController</li>
+	<li>(10pts) UML Diagram (includes fxml)</li>
+	<li>(10pts) Comments - Javadoc comments on all classes (does not include fxml)</li>
+</ul>
+<i>Submissions which do not compile will receive a maximum of 10 points total.</i>
+
+<hr width="100%">
+  <script type="text/javascript">
+    <!--
+      var lastUpdate = new Date(document.lastModified);
+      document.write("Revision Date " + lastUpdate.toString());
+      -->
+    </script>
+  <br>
+</body>
+</html>
