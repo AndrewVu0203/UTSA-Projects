@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>CS 3443 - Lab 3</title>
+</head>
+<body>
+
+<h2>UTSA CS 3443: Application Programming</h2>
+<hr width="100%">
+<h2>Lab 3</h2>
+<hr>
+
+<h3>Objectives:</h3>
+<ul>
+	<li>JavaFX</li>
+	<li>ArrayList</li>
+	<li>File I/O</li>
+	<li>UML Diagrams</li>
+</ul>
+
+<h3>Task: The Federation needs you!</h3>
+The United Federation of Planets needs your help organizing their fleet of interstellar starships. 
+They're requesting software with a simple interface and Java objects to handle starships, which are spacecrafts manned by a crew. 
+With this software, the Federation will be able to accurately track senior staff aboard each starship. 
+Make it so!
+<hr>
+
+
+<h3>Getting Started</h3>
+
+To begin this lab, create a new <b>JavaFX project</b> named <b>abc123-lab3</b>, and create the following:
+<ul>
+	<li><b>Main.java</b> - in the application package</li>
+        <li><b>MainController.java</b> - in the application.controller package</li>
+        <li><b>Fleet.java</b> - in the application.model package</li>
+        <li><b>Starship.java</b> - in the application.model package</li>
+        <li><b>CrewMember.java</b> - in the application.model package</li>
+        <li><b>Main.fxml</b></li>
+</ul>
+This lab is your first hands-on experience with JavaFX on your own.
+It will follow the MVC design pattern (as all of our JavaFX apps this semester). 
+There will be 3 model classes, 1 view, and 1 controller.
+<hr>
+
+
+<h3>App Design</h3>
+<p>
+Your program will show a view similar to the one shown below when the app is run:
+<br/>
+<img src="lab3.png" style="width:60%;height:60%"/>
+<br/>
+This view will be the <b>Main.fxml</b>.
+</p>
+
+<p>
+	When the user first loads the app, both the text field and the text area will be blank.
+	The user will enter a name into the text field and click the submit button, which will populate data into the text area in the lower half of the app.
+</p>
+
+<p>
+<b>You may customize your app how ever you choose</b> - this includes images, fonts, colors, size of the app, configuration.<br/>
+<i>Remember to ensure your app works on all display sizes.</i> For this lab, you can do this by making your app no larger than 800x800.<br/>
+The app must have the following GUI components:
+<ul>
+	<li>A label for the app (should here as "United Federation of Planets")</li>
+	<li>One label above an editable textfield.</li>
+	<li>A "submit" button</li>
+	<li>A text area to display results.</li>
+</ul>
+</p>
+<hr>
+
+
+
+<h3>Making it Work</h3>
+<p>
+<b>Main.java</b> will launch the application and shown the <b>Main.fxml</b>. <br/>
+<b>MainController.java</b> will need to implement the <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/event/EventHandler.html">EventHandler</a> interface, and handle any events that occur when the user interacts with <b>Main.fxml</b>.
+<br/><br/>
+When the app launches, the MainController will call on the Fleet class to load the data needed to populate the view.
+All data for the app has been provided, in csv format, here: 
+<a href="data.zip">data.zip</a>. 
+Unzip this file, and place the folder at the top of your Eclipse project. <br/>
+Before moving forward, take a closer look at the data in these files. 
+You can open them as spreadsheets, or you can view the comma-delimited format by right-clicking on them and choosing "open with > text editor".
+<br/><br/>
+The controller will need class variables for most of the GUI components on the view.
+</p>
+
+<hr>
+<h3>The Model</h3>
+<p>
+	The model of your app will consist of 3 classes: Fleet, Starship, and CrewMember.
+	<br/>
+	For each class, create class variables, constructors, all getters/setters, toString(), and any methods needed to complete the following requirements.
+</p>
+
+<b>Fleet.java</b>
+<p>
+	To be initialized, a Fleet object must have a name. 
+	In addition, every Fleet has an ArrayList of Starship objects.
+	<br/>
+	The Fleet will be the access point for the data in the remainder of the app.
+	The controller will call on methods in the Fleet class to access starship names, crew member information, and to load data in the files.
+</p>
+
+<b>Starship.java</b>
+<p>
+	A Starship object must have:
+	<ul>
+		<li>A name (i.e. USS Enterprise)</li>
+		<li>A registry (i.e. NCC-1701-A)</li>
+		<li>A class of starship (i.e. Constitution)</li>
+		<li>An ArrayList of CrewMember objects</li>
+	</ul>
+	There is no limit on the number of crew members on board a starship. 
+	<i>(They said it's "bigger on the inside", whatever that means..)</i>
+</p>
+
+<b>CrewMember.java</b>
+<p>
+	A CrewMember object must have:
+	<ul>
+		<li>A name (i.e. James T. Kirk)</li>
+		<li>A position (i.e. Commanding Officer)</li>
+		<li>A rank (i.e. Captain)</li>
+		<li>A species (i.e. Human)</li>
+	</ul>
+</p>
+
+<p>The remaining design of the model of this app is up to you - you may add other model classes if you find it necessary.</p>
+	
+	
+
+<hr>
+<h3>App Functionality</h3>
+Now that we have organized the data of our app (the model), we can focus on what the app does with the data. 
+There will be two concepts to focus on:
+
+<p>
+	<b>1. Loading and searching the data.</b>
+	<br/>
+	This part will be a responsibility of the model, and will be called by the controller.
+	The controller will need a method called <b>handle</b>, which must be connected to the Submit button on the view.
+	The handle method must not read data from the file!
+	Instead, handle calls on a method in the Fleet class to read the data from the files, creating Starships and CrewMembers as needed.
+	This method must be a class method, and will return a Fleet object that has been created using the data in the files.
+	<br/>
+	Within the Fleet class, there will be an object method <b>getStarshipsByName</b> which will take in a String name of a starship and return an ArrayList of Starship objects.
+	In the MainController, the handle method has a Fleet object, it should use this object to call getStarshipsByName(..), passing as a parameter the text entered by the user.
+</p>
+
+<p>
+	<b>2. Displaying the data on the view.</b>
+	<br/>
+	This part will be implemented in the controller, setting values to the view.
+	Use the ArrayList of Starships returned by getStarshipsByName(..) to populate the text area at the bottom of our view.
+</p>
+<i>You may set the name of the Fleet object by default as "United Federation of...", but the remaining data must be read from the given data files.</i>
+
+
+<hr>
+<h3>Testing Your App</h3>
+<p>
+	Always test your app thoroughly before submitting, to ensure everything is working properly.
+	This is our first JavaFX app, so testing will be a little different. 
+	<br/><br/>
+	If you haven't implemented the search yet, you can test your app by having it always display all starships when the Submit button is clicked.
+	Before moving beyond this step, ensure that your output in the app matches the format of the example given above.
+	<br/><br/>
+	Next, try searching as in the example above.
+	Ensure all the data is loading correctly and that your data matches that given in the example image above.
+	<br/><br/>
+	Don't forget to try searching for a name that is not in our data. 
+	Your app should not crash or show an exception in the console under this type of condition. 
+	Instead, show a message in the text area indicating no ship of that name could be found.
+</p>
+
+
+
+
+<hr>
+Submission: You must export the Eclipse project, including all files &amp; dependencies for the project (this includes images, text files, fxml, etc). <br/>
+<h4>Rubric:</h4>
+<ul>
+	<li>(40pts) Correctness - app functions as described.</li>
+	<li>(20pts) MVC - app is implemented as described, adhering to MVC design pattern.</li>
+	<li>(20pts) Main.fxml - has all required GUI components.</li>
+	<li>(10pts) UML Diagram (includes fxml) - place the UML diagram at the top of (within) your Eclipse project, prior to exporting.</li>
+	<li>(10pts) Comments - Javadoc comments on all classes (does not include fxml)</li>
+</ul>
+<i>Submissions which do not compile will receive a maximum of 10 points total. Submissions not using JavaFX will receive no credit.</i>
+
+<hr>
+ <script type="text/javascript">
+                <!--
+                        var lastUpdate = new Date(document.lastModified);
+                        document.write("Revision Date " + lastUpdate.toString());
+                        -->
+                </script>
+</body>
+</html>

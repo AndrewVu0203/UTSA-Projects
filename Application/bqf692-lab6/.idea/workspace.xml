@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f3b7e6c8-8a3d-4b99-baea-bf0730651fbd" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ToMuEOEmUBJ190UZHajM9ATaPs" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="edu.utsa.cs3443.lab2" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.utsa.cs3443.lab2.test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.BigIntegerTest">
+    <configuration name="BigIntegerTest.testSetBigInteger" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+      <module name="bqf692-lab6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.utsa.cs3443.lab2.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.utsa.cs3443.lab2.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.utsa.cs3443.lab2.test.BigIntegerTest" />
+      <option name="METHOD_NAME" value="testSetBigInteger" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BigInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.utsa.cs3443.lab2.BigInteger" />
+      <module name="bqf692-lab6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.utsa.cs3443.lab2.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.utsa.cs3443.lab2.Main" />
+      <module name="bqf692-lab6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BigIntegerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bqf692-lab6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.utsa.cs3443.lab2.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.utsa.cs3443.lab2.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.utsa.cs3443.lab2.test.BigIntegerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BigIntegerTest" />
+        <item itemvalue="Application.BigInteger" />
+        <item itemvalue="Android JUnit.BigIntegerTest.testSetBigInteger" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3b7e6c8-8a3d-4b99-baea-bf0730651fbd" name="Default Changelist" comment="" />
+      <created>1574122215229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574122215229</updated>
+      <workItem from="1574122216557" duration="2222000" />
+      <workItem from="1574184782953" duration="383000" />
+      <workItem from="1574189726391" duration="1053000" />
+      <workItem from="1574191514089" duration="454000" />
+      <workItem from="1574192575622" duration="14000" />
+      <workItem from="1574361744880" duration="1184000" />
+      <workItem from="1574374876994" duration="97000" />
+      <workItem from="1574392351928" duration="3285000" />
+      <workItem from="1574440503865" duration="1231000" />
+      <workItem from="1574445909137" duration="347000" />
+      <workItem from="1574446784384" duration="4102000" />
+      <workItem from="1574457217289" duration="669000" />
+      <workItem from="1574463011540" duration="1010000" />
+      <workItem from="1574532627853" duration="502000" />
+      <workItem from="1574635810670" duration="1372000" />
+      <workItem from="1574637983715" duration="5000" />
+      <workItem from="1574644521534" duration="8000" />
+      <workItem from="1574811846279" duration="452000" />
+      <workItem from="1574813092788" duration="226000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
