@@ -1,0 +1,31 @@
+
+C Process Control : 
+file descriptor : id 
+STDIN_FILENO : 
+
+
+Question still have :
+dup2() ->
+fork() close 
+
+After Exam :
+Do challenge exam have bonus +60 ? 
+Is the format similar with Bash, Sed, Awk, Process Control
+true, false -> waited on, read more on fork to answer true false
+short answer -> explain fork
+advice -> confuse how to take filename in bash, awk, c, python
+bash 4 -> exact same question
+sed 8 -> exact same question
+awk 9 -> check oddline
+python 11 -> exact same
+python 12 -> exact same, capture last 4 numbers but don't change it
+python 13 -> quite the same, careful with *()*, i don't understand which part is included, which part is excluded
+C 14 -> simpler, just seek, read, write to swap data1 and data2
+pipe already passed to me 
+16 same, with "c" is "d", draw a diagram
+C execl
+inode, 8GB, 4k
+
+
+
+
