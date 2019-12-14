@@ -1,0 +1,34 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class a8main {
+  
+  public static void main(String[] args){
+    System.out.println("hello world");
+    
+// TODO: panel not working, may need to add something like Frame
+    
+    String minutes;
+//    minutes = JOptionPane.showInputDialog(null, "Enter the minutes you will call.", "Dialog", JOptionPane.WARNING_MESSAGE);
+//    JOptionPane.showMessageDialog(null, minutes, "Your rate is", 1);
+    
+    JRadioButton radio1 = new JRadioButton("Choice 1", true); 
+    JRadioButton radio2 = new JRadioButton("Choice 2"); 
+    JRadioButton radio3 = new JRadioButton("Choice 3");
+    
+    
+    ButtonGroup group = new ButtonGroup();
+    group.add(radio1);
+    group.add(radio2);
+    group.add(radio3);
+    
+    JPanel panel = new JPanel();
+    panel.add(radio1);
+    panel.add(radio2);
+    panel.add(radio3);
+
+
+  }
+  
+  
+}

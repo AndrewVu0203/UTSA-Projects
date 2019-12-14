@@ -1,0 +1,7 @@
+public class PigLatinator {
+  
+  public static void pigLatin(){
+        System.out.print("Hello World");
+  }
+  
+}
