@@ -1,5 +1,0 @@
-public class a7main{
-  public static void main(String[] args){
-    System.out.println("Hello a7main.java");
-  }
-}
